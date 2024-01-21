@@ -3,10 +3,18 @@ package com.ll.project.yourteacher.app.base.member.entity;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.ll.project.yourteacher.app.base.entity.BaseEntity;
 import jakarta.persistence.Column;
+import jakarta.validation.constraints.NotEmpty;
+import lombok.Data;
 
-public class Member extends BaseEntity {
+@Data
+public class Member {
+    private Long id;
+
+    @NotEmpty
+    private String loginId;
+
     @Column(unique = true)
-    private String username;
+    private String nickname;
 
     @JsonIgnore
     private String password;
@@ -14,7 +22,8 @@ public class Member extends BaseEntity {
     @Column(unique = true)
     private String email;
 
-    public Member(long id) {
-        super(id);
+    public void setId(long l) {
     }
+
+
 }
