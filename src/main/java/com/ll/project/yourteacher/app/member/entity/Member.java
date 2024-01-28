@@ -1,4 +1,4 @@
-package com.ll.project.yourteacher.app.base.member.entity;
+package com.ll.project.yourteacher.app.member.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.ll.project.yourteacher.app.base.entity.BaseEntity;
@@ -12,8 +12,6 @@ import lombok.Setter;
 @Entity
 @Getter
 public class Member extends BaseEntity {
-    private Long id;
-
     @NotEmpty
     private String loginId;
 

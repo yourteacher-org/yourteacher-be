@@ -1,6 +1,6 @@
-package com.ll.project.yourteacher.app.base.member.repository;
+package com.ll.project.yourteacher.app.member.repository;
 
-import com.ll.project.yourteacher.app.base.member.entity.Member;
+import com.ll.project.yourteacher.app.member.entity.Member;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Repository;
 

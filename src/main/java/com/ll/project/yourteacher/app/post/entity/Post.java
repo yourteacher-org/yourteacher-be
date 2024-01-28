@@ -1,13 +1,11 @@
-package com.ll.project.yourteacher.app.base.post.entity;
+package com.ll.project.yourteacher.app.post.entity;
 
 import com.ll.project.yourteacher.app.base.entity.BaseEntity;
-import com.ll.project.yourteacher.app.base.member.entity.Member;
+import com.ll.project.yourteacher.app.member.entity.Member;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.ManyToOne;
-import lombok.Data;
 import lombok.Getter;
-import lombok.Setter;
 
 @Entity
 @Getter
