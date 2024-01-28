@@ -7,8 +7,9 @@ import lombok.Getter;
 @Entity
 @Getter
 public class PostRequestDTO {
+    private Member author;
     private String title;
     private String content;
     private Long categoryId;
-    private Member author;
+
 }

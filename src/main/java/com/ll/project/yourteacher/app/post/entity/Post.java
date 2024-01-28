@@ -7,20 +7,38 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.ManyToOne;
 import lombok.Getter;
+import lombok.Setter;
 
 @Entity
 @Getter
+@Setter
 public class Post extends BaseEntity {
     @ManyToOne(fetch = FetchType.LAZY)
     private Member author;
 
-    private String subject;
+    private String title;
     private String content;
 
     @ManyToOne(fetch = FetchType.LAZY)
     private Category category;
 
-    public Post(long id) {
-        super(id);
+    public Post() {
+        super();
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+    public void setAuthor(Member author) {
+        this.author = author;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
     }
 }
